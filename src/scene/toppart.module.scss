@@ -1,0 +1,81 @@
+
+//顶端底部遮罩
+.topcover{   
+    position: absolute;
+    top:0%;
+    bottom:850px;
+    left:0%;
+    right:0%;
+    background-color: rgba(38,38,38);
+    opacity: 2;
+}
+
+//poe模块
+.poe_button{    
+    position: absolute;
+    width:200px;
+    height:40px; 
+    top:5px;
+    left:1px;  
+    color:white;
+    background-color: rgb(38,38,38);
+    opacity: 2;
+
+    //poe图片
+    img{   
+        position:absolute;
+        top:5px;
+        left: 14px;
+        width: 39px;
+    }
+
+    //文字
+    span{     
+        position: absolute;
+        top:2px;
+        left:60px;
+        font-size: 31px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-weight: 450;
+    };
+}
+
+//chatgpt模块
+.chatgpt_button{    
+    position: absolute;
+    width:200px;
+    height:40px; 
+    top:4px;
+    left:1030px;  
+    color:white;
+    background-color: rgb(38,38,38);
+    opacity: 2;
+
+    //chatgpt图片
+    img:nth-child(1){     
+        position:relative;
+        top:-3px;
+        left: 5px;
+        width: 43px;
+    }
+    
+    //文字
+    span{  
+        position: absolute;
+        top: 6px;
+        left:55px;
+        color: white;
+        font-size: 19.5px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+    }
+    
+    //箭头
+    img:last-child{
+        position:absolute;
+        top:8px;
+        left: 136px;
+        width: 17px;
+    }
+}
+

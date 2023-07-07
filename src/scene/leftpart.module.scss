@@ -1,0 +1,463 @@
+
+//左侧底部遮罩
+.leftcover{     
+    position: absolute;
+    top:6%;
+    bottom:0%;
+    left:0%;
+    right:84%;
+    background-color: rgba(24,24,24);
+}
+
+//explore模块
+.explore_button{    
+    position: absolute;
+    width:131px;
+    height:70px; 
+    top:8px;
+    left:15px;
+    border-radius: 10px;  
+    color:white;
+    background-color: rgb(47,47,47);
+    opacity: 2;
+
+    //图标图片
+    img:nth-child(1){   
+        position: absolute;
+        top:8px;
+        left:5px;        
+    }
+    
+    //文字
+    span{ 
+        position:absolute; 
+        top:40px;
+        left:9px;
+        font-size: 14px;
+        letter-spacing: 0px;
+    }
+
+    //箭头图片
+    img:last-child{  
+        position: absolute;
+        top:37px;
+        left:97px;
+    }
+}
+
+
+//create_bot模块
+.create_bot_button{    
+    position: absolute;
+    width:130px;
+    height:70px; 
+    top:8px;
+    left:154px;
+    border-radius: 10px;  
+    color:white;
+    background-color: rgb(47, 47, 47);
+    opacity: 2;
+
+    //图标图片
+    img:nth-child(1){
+        position: absolute;
+        top:3px;
+        left:4px;
+    }
+
+    //文字
+    span{
+        position:absolute; 
+        top:40px;
+        left:6px;
+        font-size: 14px;
+        letter-spacing: 0px; 
+    }
+    
+    //加号图片
+    img:last-child{
+        position: absolute;
+        top:39px;
+        left:99px;
+    }
+}
+
+
+//sage模块
+.sage{    
+    position: absolute;
+    width:307px;
+    height:70px; 
+    top:90px;
+    left:0px;
+    color:white;
+    background-color: rgb(24,24,24);
+    opacity: 2;
+
+    //图标图片
+    img{
+        position: absolute;
+        top:6px;
+        left:10px;
+    }
+
+    //文字
+    span{
+        position:absolute; 
+        top:18px;
+        left:60px;
+        font-size: 14px;
+        letter-spacing: 0px; 
+        font-size: 16px;
+    }
+}
+
+
+//GPT-4模块
+.gpt4{    
+    position: absolute;
+    width:307px;
+    height:70px; 
+    top:160px;
+    left:0px;
+    background-color: rgb(24,24,24);
+    opacity: 2;
+
+    //图标图片
+    img{
+        position: absolute;
+        top:2px;
+        left:12px;
+    }
+
+    //标题
+    first-span{
+        position:absolute; 
+        top:2px;
+        left:60px;
+        font-size: 16px;
+        letter-spacing: 0px; 
+        color:white;
+    }
+
+    //文字
+    second-span{
+        position:absolute; 
+        top:23px;
+        left:60px;
+        font-size: 14px;
+        letter-spacing: 0px; 
+        color:rgba(255, 255, 255, 0.71);
+    }
+}
+
+
+//claude+模块
+.claude{    
+    position: absolute;
+    width:307px;
+    height:70px; 
+    top:230px;
+    left:0px;
+    background-color: rgb(24,24,24);
+    opacity: 2;
+
+    //图标图片
+    img{
+        position: absolute;
+        top:-6px;
+        left:12px;
+    }
+
+    //标题
+    first-span{
+        position:absolute; 
+        top:-2px;
+        left:60px;
+        font-size: 16px;
+        letter-spacing: 0px; 
+        color:white;
+    }
+
+    //文字
+    second-span{
+        position:absolute; 
+        top:19px;
+        left:60px;
+        font-size: 14px;
+        letter-spacing: 0px; 
+        color:rgba(255, 255, 255, 0.71);
+    }
+}
+
+
+//claude_instant_100k模块
+.claude_instant_100k{    
+    position: absolute;
+    width:307px;
+    height:70px; 
+    top:300px;
+    left:0px;
+    background-color: rgb(24,24,24);
+    opacity: 2;
+
+    //图标图片
+    img{
+        position: absolute;
+        top:-10px;
+        left:7px;
+    }
+
+    //标题
+    first-span{
+        position:absolute; 
+        top:-6px;
+        left:60px;
+        font-size: 16px;
+        letter-spacing: 0px; 
+        color:white;
+    }
+
+    //文字
+    second-span{
+        position:absolute; 
+        top:15px;
+        left:60px;
+        font-size: 14px;
+        letter-spacing: 0px; 
+        color:rgba(255, 255, 255, 0.71);
+    }
+}
+
+
+//claude_instant模块
+.claude_instant{    
+    position: absolute;
+    width:307px;
+    height:40px; 
+    top:370px;
+    left:0px;
+    background-color: rgb(24,24,24);
+    opacity: 2;
+
+    //图标图片
+    img{
+        position: absolute;
+        top:-16px;
+        left:9px;
+    }
+
+    //文字
+    span{
+        position:absolute; 
+        top:-4px;
+        left:60px;
+        font-size: 16px;
+        letter-spacing: 0px; 
+        color:white;
+    }
+}
+
+//chatgpt模块
+.chatgpt{    
+    position: absolute;
+    width:307px;
+    height:60px; 
+    top:410px;
+    left:0px;
+    background-color: rgb(24,24,24);
+    opacity: 2;
+
+    //图标图片
+    img{
+        position: absolute;
+        top:4px;
+        left:13px;
+        width:41px;
+    }
+
+    //文字
+    span{
+        position:absolute; 
+        top:16px;
+        left:60px;
+        font-size: 16px;
+        letter-spacing: 0px; 
+        color:white;
+    }
+}
+
+//google_palm模块
+.google_palm{    
+    position: absolute;
+    width:307px;
+    height:60px; 
+    top:470px;
+    left:0px;
+    background-color: rgb(24,24,24);
+    opacity: 2;
+
+    //图标图片
+    img{
+        position: absolute;
+        top:8px;
+        left:11px;
+    }
+
+    //文字
+    span{
+        position:absolute; 
+        top:16px;
+        left:60px;
+        font-size: 16px;
+        letter-spacing: 0px; 
+        color:white;
+    }
+}
+
+//subscribe模块
+.subscribe{    
+    position: absolute;
+    width:307px;
+    height:62px; 
+    top:530px;
+    left:0px;
+    background-color: rgb(24,24,24);
+    opacity: 2;
+
+    //图标图片
+    img{
+        position: absolute;
+        top:14px;
+        left:15px;
+    }
+
+    //文字
+    span{
+        position:absolute; 
+        top:18px;
+        left:62px;
+        font-size: 16px;
+        letter-spacing: 0px; 
+        color:white;
+    }
+}
+
+//profile模块
+.profile{    
+    position: absolute;
+    width:307px;
+    height:63px; 
+    top:592px;
+    left:0px;
+    background-color: rgb(24,24,24);
+    opacity: 2;
+
+    //图标图片
+    img{
+        position: absolute;
+        top:15px;
+        left:19px;
+    }
+
+    //文字
+    span{
+        position:absolute; 
+        top:19px;
+        left:62px;
+        font-size: 16px;
+        letter-spacing: 0px; 
+        color:white;
+    }
+}
+
+//setting模块
+.settings{    
+    position: absolute;
+    width:307px;
+    height:63px; 
+    top:655px;
+    left:0px;
+    background-color: rgb(24,24,24);
+    opacity: 2;
+
+    //图标图片
+    img{
+        position: absolute;
+        top:14px;
+        left:20px;
+    }
+
+    //文字
+    span{
+        position:absolute; 
+        top:19px;
+        left:62px;
+        font-size: 16px;
+        letter-spacing: 0px; 
+        color:white;
+    }
+}
+
+//send_feedback模块
+.send_feedback{    
+    position: absolute;
+    width:307px;
+    height:60px; 
+    top:718px;
+    left:0px;
+    background-color: rgb(24,24,24);
+    opacity: 2;
+
+    //图标图片
+    img{
+        position: absolute;
+        top:15px;
+        left:20px;
+    }
+
+    //文字
+    span{
+        position:absolute; 
+        top:19px;
+        left:62px;
+        font-size: 16px;
+        letter-spacing: 0px; 
+        color:white;
+    }
+}
+
+//download_ios_app模块
+.download_ios_app{    
+    position: absolute;
+    width:307px;
+    height:68px; 
+    top:778px;
+    left:0px;
+    background-color: rgb(38,38,38);
+    opacity: 2;
+    z-index: 2;
+}
+
+//down_ios_app_inner模块
+.download_ios_app_inner{
+    position: absolute;
+    width:262px;
+    height:41px; 
+    top:18px;
+    left:16px;
+    border-radius: 25px;
+    background-color: rgba(52, 68, 193, 0.89);
+    opacity: 2;
+    z-index: 3;
+    border:0px solid rgb(38,38,38);
+
+    span{
+        position:absolute; 
+        top:12px;
+        left:60px;
+        font-size: 16.5px;
+        letter-spacing: 0.3px; 
+        color:white;
+    }
+}
