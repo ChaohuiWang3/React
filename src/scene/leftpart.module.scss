@@ -2,36 +2,37 @@
 //左侧底部遮罩
 .leftcover{     
     position: absolute;
-    top:6%;
+    top:54px;
     bottom:0%;
     left:0%;
-    right:84%;
+    width:300px;
     background-color: rgba(24,24,24);
+    border-right: 0.02px solid rgb(255, 255, 255,0.15);
 }
 
 //explore模块
-.explore_button{    
+.explore{    
     position: absolute;
-    width:131px;
-    height:70px; 
-    top:8px;
+    width:127px;
+    height:68px; 
+    top:9px;
     left:15px;
     border-radius: 10px;  
     color:white;
-    background-color: rgb(47,47,47);
+    background-color: rgb(38,38,38);
     opacity: 2;
 
     //图标图片
     img:nth-child(1){   
         position: absolute;
-        top:8px;
+        top:3px;
         left:5px;        
     }
     
     //文字
     span{ 
         position:absolute; 
-        top:40px;
+        top:39px;
         left:9px;
         font-size: 14px;
         letter-spacing: 0px;
@@ -40,36 +41,36 @@
     //箭头图片
     img:last-child{  
         position: absolute;
-        top:37px;
-        left:97px;
+        top:38px;
+        left:103px;
     }
 }
 
 
 //create_bot模块
-.create_bot_button{    
+.create_bot{    
     position: absolute;
-    width:130px;
-    height:70px; 
-    top:8px;
-    left:154px;
-    border-radius: 10px;  
+    width:127px;
+    height:68px; 
+    top:9px;
+    left:151px;
+    border-radius: 11px;  
     color:white;
-    background-color: rgb(47, 47, 47);
+    background-color: rgb(38,38,38);
     opacity: 2;
 
     //图标图片
     img:nth-child(1){
         position: absolute;
-        top:3px;
-        left:4px;
+        top:9px;
+        left:7px;
     }
 
     //文字
     span{
         position:absolute; 
-        top:40px;
-        left:6px;
+        top:39px;
+        left:8px;
         font-size: 14px;
         letter-spacing: 0px; 
     }
@@ -77,8 +78,8 @@
     //加号图片
     img:last-child{
         position: absolute;
-        top:39px;
-        left:99px;
+        top:40px;
+        left:103px;
     }
 }
 
@@ -86,25 +87,26 @@
 //sage模块
 .sage{    
     position: absolute;
-    width:307px;
-    height:70px; 
+    width:300px;
+    height:69px; 
     top:90px;
     left:0px;
     color:white;
     background-color: rgb(24,24,24);
+    border-top: 0.02px solid rgb(255, 255, 255,0.15);
     opacity: 2;
 
     //图标图片
     img{
         position: absolute;
         top:6px;
-        left:10px;
+        left:9px;
     }
 
     //文字
     span{
         position:absolute; 
-        top:18px;
+        top:17px;
         left:60px;
         font-size: 14px;
         letter-spacing: 0px; 
@@ -116,7 +118,7 @@
 //GPT-4模块
 .gpt4{    
     position: absolute;
-    width:307px;
+    width:300px;
     height:70px; 
     top:160px;
     left:0px;
@@ -155,7 +157,7 @@
 //claude+模块
 .claude{    
     position: absolute;
-    width:307px;
+    width:300px;
     height:70px; 
     top:230px;
     left:0px;
@@ -194,7 +196,7 @@
 //claude_instant_100k模块
 .claude_instant_100k{    
     position: absolute;
-    width:307px;
+    width:300px;
     height:70px; 
     top:300px;
     left:0px;
@@ -233,7 +235,7 @@
 //claude_instant模块
 .claude_instant{    
     position: absolute;
-    width:307px;
+    width:300px;
     height:40px; 
     top:370px;
     left:0px;
@@ -261,7 +263,7 @@
 //chatgpt模块
 .chatgpt{    
     position: absolute;
-    width:307px;
+    width:300px;
     height:60px; 
     top:410px;
     left:0px;
@@ -290,7 +292,7 @@
 //google_palm模块
 .google_palm{    
     position: absolute;
-    width:307px;
+    width:300px;
     height:60px; 
     top:470px;
     left:0px;
@@ -318,24 +320,25 @@
 //subscribe模块
 .subscribe{    
     position: absolute;
-    width:307px;
+    width:300px;
     height:62px; 
-    top:530px;
+    top:528px;
     left:0px;
     background-color: rgb(24,24,24);
+    border-top: 0.02px solid rgb(255, 255, 255,0.15);
     opacity: 2;
 
     //图标图片
     img{
         position: absolute;
-        top:14px;
+        top:15px;
         left:15px;
     }
 
     //文字
     span{
         position:absolute; 
-        top:18px;
+        top:19px;
         left:62px;
         font-size: 16px;
         letter-spacing: 0px; 
@@ -346,11 +349,12 @@
 //profile模块
 .profile{    
     position: absolute;
-    width:307px;
+    width:300px;
     height:63px; 
-    top:592px;
+    top:591px;
     left:0px;
     background-color: rgb(24,24,24);
+    border-top: 0.02px solid rgb(255, 255, 255,0.15);
     opacity: 2;
 
     //图标图片
@@ -374,11 +378,12 @@
 //setting模块
 .settings{    
     position: absolute;
-    width:307px;
+    width:300px;
     height:63px; 
-    top:655px;
+    top:654px;
     left:0px;
     background-color: rgb(24,24,24);
+    border-top: 0.02px solid rgb(255, 255, 255,0.15);
     opacity: 2;
 
     //图标图片
@@ -402,11 +407,12 @@
 //send_feedback模块
 .send_feedback{    
     position: absolute;
-    width:307px;
+    width:300px;
     height:60px; 
-    top:718px;
+    top:717px;
     left:0px;
     background-color: rgb(24,24,24);
+    border-top: 0.02px solid rgb(255, 255, 255,0.15);
     opacity: 2;
 
     //图标图片
@@ -427,37 +433,61 @@
     }
 }
 
-//download_ios_app模块
-.download_ios_app{    
+//左侧列表下载空间
+.download_space{    
     position: absolute;
-    width:307px;
+    width:300px;
     height:68px; 
     top:778px;
     left:0px;
     background-color: rgb(38,38,38);
     opacity: 2;
-    z-index: 2;
+    //z-index: 1;
 }
 
-//down_ios_app_inner模块
-.download_ios_app_inner{
+//download_ios_app模块
+.download_ios_app{
     position: absolute;
     width:262px;
     height:41px; 
-    top:18px;
+    top:19px;
     left:16px;
     border-radius: 25px;
     background-color: rgba(52, 68, 193, 0.89);
     opacity: 2;
-    z-index: 3;
+    //z-index: 2;
     border:0px solid rgb(38,38,38);
 
     span{
         position:absolute; 
-        top:12px;
-        left:60px;
-        font-size: 16.5px;
-        letter-spacing: 0.3px; 
-        color:white;
+        top:7px;
+        left:59px;
+        font-size: 17.4px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
     }
+}
+
+//滚动条空间
+.scroll_bar_space{
+    position: absolute;
+    top:0px;
+    bottom:0%;
+    left:294px;
+    width:6px;
+    //right:84%;
+    background-color: rgb(24,24,24);
+    //z-index:2;
+}
+
+//滚动条模块
+.scroll_bar{
+    position: absolute;
+    top:-3px;
+    height:758px;
+    left:0px;
+    width:6px;
+    //right:84%;
+    background-color: rgb(77,77,79);
+    //z-index:2;
 }

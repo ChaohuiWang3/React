@@ -1,0 +1,50 @@
+//清除模块
+.clear_context{
+    position:absolute;
+    top:840px;
+    left:721px;
+}
+
+//输入模块
+.input{
+    position:absolute;
+    top:835px;
+    left:766px;
+    width:724px;
+    height:48px;
+    border:0.1px solid rgba(255, 255, 255, 0.55);
+    border-radius: 45px;
+
+    span{
+        position:absolute;
+        top:13px;
+        left:20px;
+        font-size:14px;
+        color:rgba(255, 255, 255, 0.73);
+        letter-spacing: 0.5px;
+    }
+}
+
+//语音模块   
+.voice{
+    position: absolute;
+    top:842px;
+    left:1404px; 
+}
+
+//输入按钮
+.input_button{
+    position: absolute;
+    top:840px;
+    left:1447px; 
+    width:40px;
+    height:40px;
+    border-radius: 45px;
+    background-color: rgb(52,69,193);
+
+    img{
+        position: absolute;
+        top:9px;
+        left:8px;
+    }
+}
