@@ -3,6 +3,7 @@ import background from './scene/background.module.scss';
 import toppart from './scene/toppart.module.scss';
 import leftpart from './scene/leftpart.module.scss';
 import midpart from './scene/midpart.module.scss';
+import Input from './Input';
 
 //输入图片
 import poe from './image/poe.png';
@@ -141,9 +142,7 @@ class App extends Component {
         {/*输入模块*/}
         <img className={midpart.clear_context} src={clear_context} alt="clear_context"/> {/*清除按钮*/}
 
-        <div className={midpart.input}>   {/*输入框*/}
-          <span>Talk to ChatGPT on Poe</span>
-        </div>   
+        <Input/>    {/*输入框*/}
 
         <img className={midpart.voice} src={voice} alt='voice'/>   {/*语音*/}
 
