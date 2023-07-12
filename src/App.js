@@ -28,6 +28,7 @@ import share from './image/share.png';
 import clear_context from './image/clear_context.png';
 import voice from './image/voice.png';
 import input_button from './image/input_button.png';
+import attachment from './image/attachment.png';
 
 class App extends Component {
    render() {
@@ -143,6 +144,8 @@ class App extends Component {
         <img className={midpart.clear_context} src={clear_context} alt="clear_context"/> {/*清除按钮*/}
 
         <Input/>    {/*输入框*/}
+
+        <img className={midpart.attachment} src={attachment} alt='attachment'/>   {/*附件*/}
 
         <img className={midpart.voice} src={voice} alt='voice'/>   {/*语音*/}
 

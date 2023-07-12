@@ -11,7 +11,7 @@ const Input = () => {
 
   const handleDown = event => {
     if (event.key === 'Enter') {
-      console.log(input)       //将输入框内容加载到控制台
+      console.log(input)       //将输入框内容加载到控制台          {/*显示控制台分配给output的内容*/}
       setOutput(input)      //将控制台内容分配给output
       setInput('')          //清空输入框
     }
@@ -26,12 +26,14 @@ const Input = () => {
         onKeyDown={handleDown}
         className={midpart.input}/>
 
-      <div className={midpart.output}>
-        <span>{output}</span>    {/*显示控制台分配给output的内容*/}
-      </div>
-
+      {output !=='' &&                                       //有内容分配给output
+        <div className={midpart.output}>                    
+          <span>{output}</span>                              {/*输出控制台分配的内容*/}
+        </div>       
+      }
     </div>
   );
+  
 };
 
 export default Input;

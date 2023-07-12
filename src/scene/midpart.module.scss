@@ -10,8 +10,8 @@
     position:absolute;
     top:835px;
     left:766px;
-    width:724px;
-    height:48px;
+    width:720px;
+    height:46px;
     border:0.1px solid rgba(255, 255, 255, 0.55);
     background-color: rgb(24,24,24);
     color:white;
@@ -23,17 +23,22 @@
 //输出模块
 .output{
     position:absolute;
-    top:780px;
-    left:1410px;
-    //width:100px;
-    height:40px;
+    top:51px;
+    right:425px;  
+    padding: 10px;
+    border-radius: 10px;
     background-color: rgb(52,69,193);
     border-radius:15px;
+    z-index:5;
 
     span{
-        position:absolute;
-        top:7px;
-        left:5px;
+        display: inline-block;
+        min-width: 0px;
+        width: calc(10px * var(--length));
+        word-wrap: break-word;
+        max-width:590px;
+        top:-2px;
+        left:-1px;
         font-size:17.5px;
         font-weight: 500;
         color:rgba(255, 255, 255);
@@ -42,14 +47,21 @@
 }
 
 
-
-
 //语音模块   
 .voice{
     position: absolute;
     top:842px;
     left:1404px; 
 }
+
+
+//附件模块
+.attachment{
+    position:absolute;
+    top:840px;
+    left:1357px;
+}
+
 
 //输入按钮
 .input_button{
@@ -67,3 +79,4 @@
         left:8px;
     }
 }
+
