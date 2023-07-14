@@ -1,39 +1,68 @@
 import {useState} from 'react';
 import midpart from './scene/midpart.module.scss';
+import clear_text from './image/clear_text.png';
+import input_button from './image/input_button.png';
 
 const Input = () => {
   const [input, setInput] = useState('')
-  const [output, setOutput] = useState('')
+  const [output, setOutput] = useState([])
 
   const handleChange = event => {
-    setInput(event.target.value)        //输入框采集内容
+    setInput(event.target.value)        //输入框采集文本
   } 
 
-  const handleDown = event => {
-    if (event.key === 'Enter') {
-      console.log(input)       //将输入框内容加载到控制台          {/*显示控制台分配给output的内容*/}
-      setOutput(input)      //将控制台内容分配给output
+  const handleEnterInput = event => {     //用回车键将输入框文本导入输出框
+    if (event.key==='Enter') {          
+      setOutput([...output, input]) 
+        
+      if (output.length >= 14){                  //当文本数量超过一定量时，删除第一个文本并加入最新文本
+        setOutput([...output.slice(1), input])    
+      }
       setInput('')          //清空输入框
     }
   }
 
+  const handleImageInput = () => {       //用输入按钮将输入框文本导入输出框
+    setOutput([...output, input])      
+    setInput('') 
+    
+    if (output.length >= 14){
+      setOutput([...output.slice(1), input])
+    }
+  }
+
+
+  const handleClear = () => {     //清空输出框
+    setOutput([])     
+  }
+
   return (
     <div>
-      <input
+      <div className={midpart.input_button} onClick={handleImageInput}>    
+        <img src={input_button} alt="input_button"/>
+      </div>
+
+      <input                 //输入框
         type="text"
+        id='input'
         value={input} 
-        onChange={handleChange}
-        onKeyDown={handleDown}
+        onChange={handleChange}   
+        onKeyDown={handleEnterInput}
         className={midpart.input}/>
 
-      {output !=='' &&                                       //有内容分配给output
-        <div className={midpart.output}>                    
-          <span>{output}</span>                              {/*输出控制台分配的内容*/}
-        </div>       
-      }
+      <img className={midpart.clear_text} src={clear_text} alt='clear_text' onClick={handleClear}/>    
+
+      {output
+        .filter((output) => output !== '')     //如果输入为空不显示
+        .map((output, index) => (
+          <div className={midpart.output_container}>          {/*所有输出框右对齐*/}
+            <div className={midpart.output} key={index}>     {/*遍历此时输出框的所有文本*/}
+              <span>{output}</span>
+            </div>
+          </div>
+      ))}
     </div>
-  );
-  
+  ); 
 };
 
 export default Input;

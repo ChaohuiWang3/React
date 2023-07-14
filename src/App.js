@@ -25,9 +25,8 @@ import profile from './image/profile.png';
 import settings from './image/settings.png';
 import send_feedback from './image/send_feedback.png';
 import share from './image/share.png';
-import clear_context from './image/clear_context.png';
 import voice from './image/voice.png';
-import input_button from './image/input_button.png';
+//import input_button from './image/input_button.png';
 import attachment from './image/attachment.png';
 
 class App extends Component {
@@ -141,17 +140,15 @@ class App extends Component {
 
 
         {/*输入模块*/}
-        <img className={midpart.clear_context} src={clear_context} alt="clear_context"/> {/*清除按钮*/}
-
         <Input/>    {/*输入框*/}
 
         <img className={midpart.attachment} src={attachment} alt='attachment'/>   {/*附件*/}
 
         <img className={midpart.voice} src={voice} alt='voice'/>   {/*语音*/}
 
-        <div className={midpart.input_button}>     {/*输入按钮*/}
+        {/* <div className={midpart.input_button}>    
           <img src={input_button} alt="input_button"/>
-        </div>
+        </div> */}
       </div>   
     )
   }
