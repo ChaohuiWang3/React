@@ -2,20 +2,36 @@
 //左侧底部遮罩
 .leftcover{     
     position: absolute;
-    top:54px;
-    bottom:0%;
-    left:0%;
+    top:52px;
+    bottom:0px;
+    left:0px;
     width:300px;
     background-color: rgba(24,24,24);
     border-right: 0.02px solid rgb(255, 255, 255,0.15);
+    overflow-x: hidden;
+    overflow-y: scroll;
 }
+
+
+//滚动条空间
+.leftcover::-webkit-scrollbar{
+    width:6px;
+    background-color: rgb(24,24,24);
+}
+
+
+//滚动条模块
+.leftcover::-webkit-scrollbar-thumb{
+    background-color: rgb(77,77,79);
+}
+
 
 //explore模块
 .explore{    
     position: absolute;
     width:127px;
     height:68px; 
-    top:9px;
+    top:11px;
     left:15px;
     border-radius: 10px;  
     color:white;
@@ -52,7 +68,7 @@
     position: absolute;
     width:127px;
     height:68px; 
-    top:9px;
+    top:11px;
     left:151px;
     border-radius: 11px;  
     color:white;
@@ -88,8 +104,8 @@
 .sage{    
     position: absolute;
     width:300px;
-    height:69px; 
-    top:90px;
+    height:63.4px; 
+    top:91px;
     left:0px;
     color:white;
     background-color: rgb(24,24,24);
@@ -99,14 +115,14 @@
     //图标图片
     img{
         position: absolute;
-        top:6px;
+        top:7px;
         left:9px;
     }
 
     //文字
     span{
         position:absolute; 
-        top:17px;
+        top:18px;
         left:60px;
         font-size: 14px;
         letter-spacing: 0px; 
@@ -115,12 +131,12 @@
 }
 
 
-//GPT-4模块
-.gpt4{    
+//claude-2-100k模块
+.claude_2_100k{    
     position: absolute;
     width:300px;
-    height:70px; 
-    top:160px;
+    height:63.4px; 
+    top:154.4px;
     left:0px;
     background-color: rgb(24,24,24);
     opacity: 2;
@@ -128,14 +144,14 @@
     //图标图片
     img{
         position: absolute;
-        top:2px;
+        top: 6px;
         left:12px;
     }
 
     //标题
     first-span{
         position:absolute; 
-        top:2px;
+        top:10px;
         left:60px;
         font-size: 16px;
         letter-spacing: 0px; 
@@ -145,46 +161,7 @@
     //文字
     second-span{
         position:absolute; 
-        top:23px;
-        left:60px;
-        font-size: 14px;
-        letter-spacing: 0px; 
-        color:rgba(255, 255, 255, 0.71);
-    }
-}
-
-
-//claude+模块
-.claude{    
-    position: absolute;
-    width:300px;
-    height:70px; 
-    top:230px;
-    left:0px;
-    background-color: rgb(24,24,24);
-    opacity: 2;
-
-    //图标图片
-    img{
-        position: absolute;
-        top:-6px;
-        left:12px;
-    }
-
-    //标题
-    first-span{
-        position:absolute; 
-        top:-2px;
-        left:60px;
-        font-size: 16px;
-        letter-spacing: 0px; 
-        color:white;
-    }
-
-    //文字
-    second-span{
-        position:absolute; 
-        top:19px;
+        top:31px;
         left:60px;
         font-size: 14px;
         letter-spacing: 0px; 
@@ -197,8 +174,8 @@
 .claude_instant_100k{    
     position: absolute;
     width:300px;
-    height:70px; 
-    top:300px;
+    height:63.4px; 
+    top:217.8px;
     left:0px;
     background-color: rgb(24,24,24);
     opacity: 2;
@@ -206,14 +183,14 @@
     //图标图片
     img{
         position: absolute;
-        top:-10px;
+        top:8px;
         left:7px;
     }
 
     //标题
     first-span{
         position:absolute; 
-        top:-6px;
+        top:12px;
         left:60px;
         font-size: 16px;
         letter-spacing: 0px; 
@@ -223,7 +200,46 @@
     //文字
     second-span{
         position:absolute; 
+        top:33px;
+        left:60px;
+        font-size: 14px;
+        letter-spacing: 0px; 
+        color:rgba(255, 255, 255, 0.71);
+    }
+}
+
+
+//gpt-4模块
+.gpt4{    
+    position: absolute;
+    width:300px;
+    height:63.4px; 
+    top:281.2px;
+    left:0px;
+    background-color: rgb(24,24,24);
+    opacity: 2;
+
+    //图标图片
+    img{
+        position: absolute;
         top:15px;
+        left:12px;
+    }
+
+    //标题
+    first-span{
+        position:absolute; 
+        top:15px;
+        left:60px;
+        font-size: 16px;
+        letter-spacing: 0px; 
+        color:white;
+    }
+
+    //文字
+    second-span{
+        position:absolute; 
+        top: 36px;
         left:60px;
         font-size: 14px;
         letter-spacing: 0px; 
@@ -236,8 +252,8 @@
 .claude_instant{    
     position: absolute;
     width:300px;
-    height:40px; 
-    top:370px;
+    height:63.4px; 
+    top:344.6px;
     left:0px;
     background-color: rgb(24,24,24);
     opacity: 2;
@@ -245,14 +261,14 @@
     //图标图片
     img{
         position: absolute;
-        top:-16px;
+        top:11px;
         left:9px;
     }
 
     //文字
     span{
         position:absolute; 
-        top:-4px;
+        top:23px;
         left:60px;
         font-size: 16px;
         letter-spacing: 0px; 
@@ -264,37 +280,8 @@
 .chatgpt{    
     position: absolute;
     width:300px;
-    height:60px; 
-    top:410px;
-    left:0px;
-    background-color: rgb(24,24,24);
-    opacity: 2;
-
-    //图标图片
-    img{
-        position: absolute;
-        top:4px;
-        left:13px;
-        width:41px;
-    }
-
-    //文字
-    span{
-        position:absolute; 
-        top:16px;
-        left:60px;
-        font-size: 16px;
-        letter-spacing: 0px; 
-        color:white;
-    }
-}
-
-//google_palm模块
-.google_palm{    
-    position: absolute;
-    width:300px;
-    height:60px; 
-    top:470px;
+    height:63.4px; 
+    top:408px;
     left:0px;
     background-color: rgb(24,24,24);
     opacity: 2;
@@ -303,13 +290,14 @@
     img{
         position: absolute;
         top:8px;
-        left:11px;
+        left:13px;
+        width:41px;
     }
 
     //文字
     span{
         position:absolute; 
-        top:16px;
+        top:20px;
         left:60px;
         font-size: 16px;
         letter-spacing: 0px; 
@@ -317,12 +305,120 @@
     }
 }
 
+
+//chatgpt-16k模块
+.chatgpt_16k{    
+    position: absolute;
+    width:300px;
+    height:63.4px; 
+    top:471.4px;
+    left:0px;
+    background-color: rgb(24,24,24);
+    opacity: 2;
+
+    //图标图片
+    img{
+        position: absolute;
+        top:11px;
+        left:10px;
+    }
+
+    //标题
+    first-span{
+        position:absolute; 
+        top:11px;
+        left:60px;
+        font-size: 16px;
+        letter-spacing: 0px; 
+        color:white;
+    }
+
+    //文字
+    second-span{
+        position:absolute; 
+        top: 32px;
+        left:60px;
+        font-size: 14px;
+        letter-spacing: 0px; 
+        color:rgba(255, 255, 255, 0.71);
+    }
+}
+
+
+//gpr_4_32k模块
+.gpt_4_32k{    
+    position: absolute;
+    width:300px;
+    height:63.4px; 
+    top:534.8px;
+    left:0px;
+    background-color: rgb(24,24,24);
+    opacity: 2;
+
+    //图标图片
+    img{
+        position: absolute;
+        top:12px;
+        left:14px;
+    }
+
+    //标题
+    first-span{
+        position:absolute; 
+        top:13px;
+        left:60px;
+        font-size: 16px;
+        letter-spacing: 0px; 
+        color:white;
+    }
+
+    //文字
+    second-span{
+        position:absolute; 
+        top: 34px;
+        left:60px;
+        font-size: 14px;
+        letter-spacing: 0px; 
+        color:rgba(255, 255, 255, 0.71);
+    }
+}
+
+
+//google_palm模块
+.google_palm{    
+    position: absolute;
+    width:300px;
+    height:63.4px; 
+    top:598.2px;
+    left:0px;
+    background-color: rgb(24,24,24);
+    opacity: 2;
+
+    //图标图片
+    img{
+        position: absolute;
+        top:14px;
+        left:11px;
+    }
+
+    //文字
+    span{
+        position:absolute; 
+        top:22px;
+        left:60px;
+        font-size: 16px;
+        letter-spacing: 0px; 
+        color:white;
+    }
+}
+
+
 //subscribe模块
 .subscribe{    
     position: absolute;
     width:300px;
-    height:62px; 
-    top:528px;
+    height:63.4px; 
+    top:662px;
     left:0px;
     background-color: rgb(24,24,24);
     border-top: 0.02px solid rgb(255, 255, 255,0.15);
@@ -350,8 +446,8 @@
 .profile{    
     position: absolute;
     width:300px;
-    height:63px; 
-    top:591px;
+    height:63.4x; 
+    top:725px;
     left:0px;
     background-color: rgb(24,24,24);
     border-top: 0.02px solid rgb(255, 255, 255,0.15);
@@ -379,8 +475,8 @@
 .settings{    
     position: absolute;
     width:300px;
-    height:63px; 
-    top:654px;
+    height:63.4px; 
+    top:788.4px;
     left:0px;
     background-color: rgb(24,24,24);
     border-top: 0.02px solid rgb(255, 255, 255,0.15);
@@ -408,8 +504,8 @@
 .send_feedback{    
     position: absolute;
     width:300px;
-    height:60px; 
-    top:717px;
+    height:63.4px; 
+    top:851px;
     left:0px;
     background-color: rgb(24,24,24);
     border-top: 0.02px solid rgb(255, 255, 255,0.15);
@@ -433,29 +529,30 @@
     }
 }
 
-//左侧列表下载空间
+
+//下载模块背景
 .download_space{    
     position: absolute;
     width:300px;
-    height:68px; 
-    top:778px;
+    height:170px; 
+    top:915px;
     left:0px;
     background-color: rgb(38,38,38);
+    border-top: 0.02px solid rgb(255, 255, 255,0.15);
     opacity: 2;
-    //z-index: 1;
 }
+
 
 //download_ios_app模块
 .download_ios_app{
     position: absolute;
     width:262px;
     height:41px; 
-    top:19px;
+    top:15px;
     left:16px;
     border-radius: 25px;
-    background-color: rgb(52, 68, 193);
+    background-color: rgb(52, 69, 193);
     opacity: 2;
-    //z-index: 2;
     border:0px solid rgb(38,38,38);
 
     span{
@@ -468,24 +565,46 @@
     }
 }
 
-//滚动条空间
-.scroll_bar_space{
+
+//download_android_app模块
+.download_android_app{
     position: absolute;
-    top:0px;
-    bottom:0%;
-    left:294px;
-    width:6px;
-    background-color: rgb(24,24,24);
+    width:262px;
+    height:42px; 
+    top:73px;
+    left:16px;
+    border-radius: 25px;
+    background-color: rgb(52, 68, 193);
+    opacity: 2;
+    border:0px solid rgb(38,38,38);
+
+    first-span{
+        position:absolute; 
+        top:7px;
+        left:41px;
+        font-size: 17.4px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+    }
+
+    //follow us模块
+    second-span{
+        position:absolute; 
+        top:58px;
+        left:70px;
+        font-size: 15px;
+        letter-spacing: 0.5px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+    }
+
+    //twitter图像
+    img{
+        position:absolute;
+        top:58px;
+        left:167px;
+    }
 }
 
-//滚动条模块
-.scroll_bar{
-    position: absolute;
-    top:-3px;
-    height:758px;
-    left:0px;
-    width:6px;
-    background-color: rgb(77,77,79);
-}
 
 

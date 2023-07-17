@@ -15,18 +15,20 @@ import create_bot from './image/create_bot.png';
 import create_bot_plus from './image/create_bot_plus.png';
 import sage from './image/sage.png';
 import gpt4 from './image/gpt4.png';
-import claude from './image/claude.png';
+import claude_2_100k from './image/claude_2_100k.png';
 import claude_instnat_100k from './image/claude_instnat_100k.png';
 import claude_instant from './image/claude_instant.png';
 import left_chatgpt from './image/left_chatgpt.png';
+import chatgpt_16k from './image/chatgpt_16k.png';
+import gpt_4_32k from './image/gpt_4_32k.png';
 import google_palm from './image/google_palm.png';
 import subscribe from './image/subscribe.png';
 import profile from './image/profile.png';
 import settings from './image/settings.png';
 import send_feedback from './image/send_feedback.png';
+import twitter from './image/twitter.png';
 import share from './image/share.png';
 import voice from './image/voice.png';
-//import input_button from './image/input_button.png';
 import attachment from './image/attachment.png';
 
 class App extends Component {
@@ -73,22 +75,21 @@ class App extends Component {
             <span>Sage</span> 
           </div>
 
-          <div className={leftpart.gpt4}>  {/*左侧列表gpt4模块*/}
-            <img src={gpt4} alt="gpt4"/>
-            <first-span>GPT-4</first-span>
-            <second-span>Limited access</second-span>
-          </div>
-
-        
-          <div className={leftpart.claude}>  {/*左侧列表claude+模块*/}
-            <img src={claude} alt="claude"/>
-            <first-span>Claude+</first-span>
+          <div className={leftpart.claude_2_100k}>  {/*左侧列表claude_2_100k模块*/}
+            <img src={claude_2_100k} alt="claude_2_100k"/>
+            <first-span>Claude-2-100k</first-span>
             <second-span>Limited access</second-span>
           </div>
 
           <div className={leftpart.claude_instant_100k}>  {/*左侧列表claude_instant_100k模块*/}
             <img src={claude_instnat_100k} alt="claude_instnat_100k"/>
             <first-span>Claude-instant-100k</first-span>
+            <second-span>Limited access</second-span>
+          </div>
+
+          <div className={leftpart.gpt4}>  {/*左侧列表gpt4模块*/}
+            <img src={gpt4} alt="gpt4"/>
+            <first-span>GPT-4</first-span>
             <second-span>Limited access</second-span>
           </div>
 
@@ -100,6 +101,18 @@ class App extends Component {
           <div className={leftpart.chatgpt}>  {/*左侧列表chatgpt模块*/}
             <img src={left_chatgpt} alt="chatgpt"/>
             <span>ChatGPT</span>
+          </div>
+
+          <div className={leftpart.chatgpt_16k}>  {/*左侧列表chatgpt_16k模块*/}
+            <img src={chatgpt_16k} alt="chatgpt_16k"/>
+            <first-span>ChatGPT-16k</first-span>
+            <second-span>Limited access</second-span>
+          </div>
+
+          <div className={leftpart.gpt_4_32k}>  {/*左侧列表gpt_4_32k模块*/}
+            <img src={gpt_4_32k} alt="gpt_4_32k"/>
+            <first-span>GPT-4-32k</first-span>
+            <second-span>Limited access</second-span>
           </div>
 
           <div className={leftpart.google_palm}>  {/*左侧列表google_palm模块*/}
@@ -131,10 +144,12 @@ class App extends Component {
             <button className={leftpart.download_ios_app}>   {/*左侧列表下载空间内download_ios_app模块*/}
               <span>Download iOS app</span>
             </button>
-          </div>
 
-          <div className={leftpart.scroll_bar_space}>  {/*左侧列表滚动条空间*/}
-            <div className={leftpart.scroll_bar}></div>    {/*左侧列表滚动条模块*/}
+            <button className={leftpart.download_android_app}>   {/*左侧列表下载空间内download_android_app模块*/}
+              <first-span>Download Android app</first-span>
+              <second-span>Follow us on </second-span>
+              <img src={twitter} alt="twitter"/>
+            </button>
           </div>
         </div>
 
@@ -146,9 +161,6 @@ class App extends Component {
 
         <img className={midpart.voice} src={voice} alt='voice'/>   {/*语音*/}
 
-        {/* <div className={midpart.input_button}>    
-          <img src={input_button} alt="input_button"/>
-        </div> */}
       </div>   
     )
   }

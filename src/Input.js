@@ -12,10 +12,10 @@ const Input = () => {
   } 
 
   const handleEnterInput = event => {     //用回车键将输入框文本导入输出框
-    if (event.key==='Enter') {          
+    if (event.key==='Enter' && input !=='') {          
       setOutput([...output, input]) 
         
-      if (output.length >= 14){                  //当文本数量超过一定量时，删除第一个文本并加入最新文本
+      if (output.length >= 5){                  //当文本数量超过一定量时，删除第一个文本并加入最新文本
         setOutput([...output.slice(1), input])    
       }
       setInput('')          //清空输入框
@@ -23,11 +23,13 @@ const Input = () => {
   }
 
   const handleImageInput = () => {       //用输入按钮将输入框文本导入输出框
-    setOutput([...output, input])      
-    setInput('') 
-    
-    if (output.length >= 14){
-      setOutput([...output.slice(1), input])
+    if (input !=='') {
+      setOutput([...output, input]) 
+      
+      if (output.length >= 5){
+        setOutput([...output.slice(1), input])
+      }
+      setInput('')
     }
   }
 
@@ -59,6 +61,7 @@ const Input = () => {
             <div className={midpart.output} key={index}>     {/*遍历此时输出框的所有文本*/}
               <span>{output}</span>
             </div>
+      
           </div>
       ))}
     </div>
