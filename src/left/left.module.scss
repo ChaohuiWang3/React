@@ -1,0 +1,225 @@
+
+//左侧遮罩
+.cover{     
+    position: fixed;
+    top:52px;
+    bottom:0px;
+    left:0px;
+    width:300px;
+    background-color: rgba(24,24,24);
+    border-right: 0.02px solid rgb(255, 255, 255,0.15);
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+}
+
+
+//滚动条空间
+.cover::-webkit-scrollbar{
+    width:6px;
+    background-color: rgb(24,24,24);
+}
+
+
+//滚动条模块
+.cover::-webkit-scrollbar-thumb{
+    background-color: rgb(77,77,79);
+}
+
+
+//explore，create_bot模块
+.list:nth-child(1), 
+.list:nth-child(2){
+    position:relative;
+    display:inline-block;
+    top:11px;
+    left:9px;
+    width:127px;
+    height:68px; 
+    margin-left:8px;
+    border-radius: 10px;  
+    background-color: rgb(38,38,38);
+    opacity: 2;
+
+    //大图标
+    img:nth-child(1){
+        position: absolute;
+        top:10px;
+        left:9px; 
+    }
+
+    //小图标
+    img:nth-child(2){  
+        position: absolute;
+        top:41px;
+        left:104px;
+    }
+
+    //文字
+    span{ 
+        position:absolute; 
+        top:39px;
+        left: 7px;
+        font-size: 14px;
+        letter-spacing: 0px;
+        color:white;
+    }
+}
+
+
+.list:nth-child(3),
+.list:nth-child(4),
+.list:nth-child(5),
+.list:nth-child(6),
+.list:nth-child(7),
+.list:nth-child(8),
+.list:nth-child(9),
+.list:nth-child(10),
+.list:nth-child(11),
+.list:nth-child(12),
+.list:nth-child(13),
+.list:nth-child(14),
+.list:nth-child(15),
+.list:nth-child(16),
+.list:nth-child(17){
+    position:relative;
+    display:block;
+    top:19px;
+    left:0px;
+    width:300px;
+    height:63px; 
+    background-color: rgb(24,24,24);
+    opacity: 2;
+    
+    //图标
+    img{
+        position: absolute;
+        top:14px;
+        left:15px;
+    }
+    
+    span:nth-child(2){
+        position:absolute; 
+        top:13px;
+        left:60px;
+        font-size: 14px;
+        letter-spacing: 0px; 
+        font-size: 16px;
+        color:white;
+    }
+
+    //文字
+    span:nth-child(3){
+        position:absolute; 
+        top:36px;
+        left:60px;
+        font-size: 14px;
+        letter-spacing: 0px; 
+        font-size: 14px;
+        color:rgb(255,255,255,0.61);
+    }
+}
+
+.list:nth-child(3),
+.list:nth-child(7),
+.list:nth-child(8),
+.list:nth-child(11),
+.list:nth-child(12),
+.list:nth-child(13),
+.list:nth-child(14),
+.list:nth-child(15),
+.list:nth-child(16),
+.list:nth-child(17){
+    span:nth-child(2){
+        top:21px;
+    }
+}
+
+.list:nth-child(3),
+.list:nth-child(14),
+.list:nth-child(15),
+.list:nth-child(16),
+.list:nth-child(17){
+    border-top: 0.1px solid rgb(57,56,57);
+}
+
+
+
+//下载模块背景
+.download_space{    
+    position: absolute;
+    width:300px;
+    height:170px; 
+    top:915px;
+    left:0px;
+    background-color: rgb(38,38,38);
+    border-top: 0.02px solid rgb(255, 255, 255,0.15);
+    opacity: 2;
+}
+
+
+//download_ios_app模块
+.download_ios_app{
+    position: absolute;
+    width:262px;
+    height:41px; 
+    top:15px;
+    left:16px;
+    border-radius: 25px;
+    background-color: rgb(52, 69, 193);
+    opacity: 2;
+    border:0px solid rgb(38,38,38);
+
+    span{
+        position:absolute; 
+        top:7px;
+        left:59px;
+        font-size: 17.4px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+    }
+}
+
+
+//download_android_app模块
+.download_android_app{
+    position: absolute;
+    width:262px;
+    height:42px; 
+    top:73px;
+    left:16px;
+    border-radius: 25px;
+    background-color: rgb(52, 68, 193);
+    opacity: 2;
+    border:0px solid rgb(38,38,38);
+
+    first-span{
+        position:absolute; 
+        top:7px;
+        left:41px;
+        font-size: 17.4px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+    }
+
+    //follow us模块
+    second-span{
+        position:absolute; 
+        top:58px;
+        left:70px;
+        font-size: 15px;
+        letter-spacing: 0.5px;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: white;
+    }
+
+    //twitter图像
+    img{
+        position:absolute;
+        top:58px;
+        left:167px;
+    }
+}
+
+
+
