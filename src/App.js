@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import Background from './background/background.js';
 import Top from './top/top.js';
-//import Left from './left/left.js';
-//import Input from './input/Input.js';
+import Left from './left/left.js';
+import Input from './input/Input.js';
 
 class App extends Component {
     render(){
@@ -10,7 +10,8 @@ class App extends Component {
             <div>
                 <Background/>
                 <Top/>
-
+                <Left/>
+                <Input/>
             </div>
         )
     }
