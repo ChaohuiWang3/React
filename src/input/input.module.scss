@@ -1,0 +1,102 @@
+//清除模块
+.clear_text{
+    position:absolute;
+    top:840px;
+    left:721px;
+}
+
+//输入模块
+.input{
+    position:absolute;
+    top:835px;
+    left:766px;
+    width:720px;
+    height:46px;
+    border:0.1px solid rgba(255, 255, 255, 0.55);
+    background-color: rgb(24,24,24);
+    color:white;
+    border-radius: 45px;
+    font-size: 16px;
+    letter-spacing: 1px;
+
+
+    //语音模块   
+    .voice{
+        position: absolute;
+        top:842px;
+        left:1404px; 
+    }
+}
+
+//输入框有焦点时边框颜色
+.input:focus {
+    border:2px solid rgb(152, 159, 253);
+    outline:none;
+}
+
+
+//输出框定位
+.output_container{
+    position: relative;
+    top: 61px;
+    right:425px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+//输出模块
+.output {
+    top:61px; 
+    right:425px; 
+    min-width: 0px;
+    width:var(--length);
+    word-wrap: break-word;
+    max-width:590px;
+    margin-bottom:10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 7px;
+    padding-bottom: 8px;
+    background-color: rgb(52,69,193);
+    border-radius:11px;  
+
+    span{
+        top:-2px;
+        left:-1px;
+        font-size:17.5px;
+        font-weight: 500;
+        color:rgba(255, 255, 255);
+        letter-spacing: 1px;
+    }
+}
+
+
+
+
+
+//附件模块
+.attachment{
+    position:absolute;
+    top:840px;
+    left:1357px;
+}
+
+
+//输入按钮
+.input_button{
+    position: absolute;
+    top:840px;
+    left:1447px; 
+    width:40px;
+    height:40px;
+    border-radius: 45px;
+    background-color: rgb(52,69,193);
+    z-index:1;
+
+    img{
+        position: absolute;
+        top:9px;
+        left:8px;
+    }
+}
+

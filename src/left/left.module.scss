@@ -1,0 +1,207 @@
+//左侧遮罩
+.cover{     
+    position: fixed;
+    top:52px;
+    bottom:0px;
+    left:0px;
+    width:300px;
+    background-image: linear-gradient(to bottom, rgb(24,24,24) 80%, rgb(38,38,38) 20% );
+    background-position: top, bottom;
+    border-right: 0.02px solid rgb(255, 255, 255,0.15);
+    overflow-x: hidden;
+    overflow-y: scroll;
+
+}
+
+
+//滚动条空间
+.cover::-webkit-scrollbar{
+    width:6px;
+    background-color: rgb(24,24,24);
+}
+
+
+//滚动条模块
+.cover::-webkit-scrollbar-thumb{
+    background-color: rgb(77,77,79);
+}
+
+
+//explore，create_bot模块
+.list:nth-child(1), 
+.list:nth-child(2){
+    position:relative;
+    display:inline-block;
+    top:11px;
+    left:9px;
+    width:127px;
+    height:68px; 
+    margin-left:8px;
+    border-radius: 10px;  
+    background-color: rgb(38,38,38);
+    opacity: 2;
+
+    //大图标
+    img:nth-child(1){
+        position: absolute;
+        top:10px;
+        left:9px; 
+    }
+
+    //小图标
+    img:nth-child(2){  
+        position: absolute;
+        top:41px;
+        left:104px;
+    }
+
+    //文字
+    span{ 
+        position:absolute; 
+        top:39px;
+        left: 7px;
+        font-size: 14px;
+        letter-spacing: 0px;
+        color:white;
+    }
+}
+
+
+//列表图标和文字
+.list:nth-child(3),
+.list:nth-child(4),
+.list:nth-child(5),
+.list:nth-child(6),
+.list:nth-child(7),
+.list:nth-child(8),
+.list:nth-child(9),
+.list:nth-child(10),
+.list:nth-child(11),
+.list:nth-child(12),
+.list:nth-child(13),
+.list:nth-child(14),
+.list:nth-child(15),
+.list:nth-child(16),
+.list:nth-child(17){
+    position:relative;
+    display:flex;
+    top:19px;
+    left:0px;
+    width:300px;
+    height:63px; 
+    background-color: rgb(24,24,24);
+    opacity: 2;
+    
+    //图标
+    img{
+        position: absolute;
+        top:14px;
+        left:15px;
+    }
+    
+    //文字
+    span:nth-child(2){
+        position:absolute; 
+        top:13px;
+        left:61px;
+        font-size: 14px;
+        letter-spacing: 0px; 
+        font-size: 16px;
+        color:white;
+    }
+
+    //Limited Access
+    span:nth-child(3){
+        position:absolute; 
+        top:36px;
+        left:61px;
+        font-size: 14px;
+        letter-spacing: 0px; 
+        font-size: 14px;
+        color:rgb(255,255,255,0.61);
+    }
+}
+
+
+//部分没有limited access模块标题位置
+.list:nth-child(7),
+.list:nth-child(8),
+.list:nth-child(11),
+.list:nth-child(12),
+.list:nth-child(13){
+    span:nth-child(2){
+        top:22px;
+    }
+}
+
+
+//部分模块上边框和部分没有limited access模块标题位置
+.list:nth-child(3),
+.list:nth-child(14),
+.list:nth-child(15),
+.list:nth-child(16),
+.list:nth-child(17){
+    border-top: 0.1px solid rgb(57,56,57);
+    span:nth-child(2){
+        top:22px;
+    }
+}
+
+
+//下载模块上边框
+.list:nth-child(17){
+    border-bottom: 0.02px solid rgb(255, 255, 255,0.15);
+}
+
+
+//下载模块
+.list:nth-child(18),
+.list:nth-child(19),
+.list:nth-child(20){
+    position: relative;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    top:19px;
+    left:15px;
+    width:262px;
+    height:41px; 
+    border-radius: 25px;
+    background-color: rgba(52, 69, 193);
+    opacity: 2;
+    border:0px solid rgb(38,38,38);
+    color:white;
+}
+
+
+//ios App模块边界距离
+.list:nth-child(18){
+    margin-top: 16px;
+    margin-bottom:15px;
+}
+
+
+//twitter模块背景，图片
+.list:nth-child(20){
+    background-color: rgb(38,38,38);
+    margin-top:10px;
+    margin-bottom: 25px;
+    left: 3px;
+    img{
+        position:absolute;
+        top: 9px;
+        left:182px;
+    }
+}
+
+
+
+
+    
+
+
+
+
+
+
+

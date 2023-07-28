@@ -167,6 +167,6 @@ class App extends Component {
   }
 } 
 
-//错误代码尝试
+//错误代码
 export default App 
 
