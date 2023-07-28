@@ -18,6 +18,13 @@
     border-radius: 45px;
     font-size: 16px;
     letter-spacing: 1px;
+
+    //语音模块   
+    .voice{
+        position: absolute;
+        top:842px;
+        left:1404px; 
+    }
 }
 
 //输入框有焦点时边框颜色
@@ -63,12 +70,7 @@
 }
 
 
-//语音模块   
-.voice{
-    position: absolute;
-    top:842px;
-    left:1404px; 
-}
+
 
 
 //附件模块
