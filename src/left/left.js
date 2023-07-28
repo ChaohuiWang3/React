@@ -20,6 +20,7 @@ import subscribe from './image/subscribe.png';
 import profile from './image/profile.png';
 import settings from './image/settings.png';
 import send_feedback from './image/send_feedback.png';
+import twitter from './image/twitter.png';
 
 const LA = 'Limited access'
 
@@ -41,7 +42,10 @@ function Left(){
         {id: 14, images: [subscribe], texts: ['Subscribe']},
         {id: 15, images: [profile], texts: ['Profile']},
         {id: 16, images: [settings], texts: ['Settings']},
-        {id: 17, images: [send_feedback], texts: ['Send feedback']},
+        {id: 17, images: [send_feedback], texts: ['Send Feedback']},
+        {id: 18, images: [], texts: ['Download iOS app']},
+        {id: 19, images: [], texts: ['Download Android app']},
+        {id: 20, images: [twitter], texts: ['Follow us on']},
     ]
 
     return(
