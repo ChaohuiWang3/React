@@ -161,6 +161,7 @@ class App extends Component {
 
         <img className={midpart.voice} src={voice} alt='voice'/>   {/*语音*/}
 
+        <span>Hello World</span>
       </div>   
     )
   }
